@@ -10,7 +10,16 @@
     <p>This program outputs the largest of a series of integers.</p>
 
     <script>
-//YOUR CODE HERE.
+        var num;
+        var largest = Number.MIN_VALUE;
+
+        while((num = Number(prompt("Enter a number"))) != 0){
+            if(num > largest){
+                largest = num;
+            }
+        }
+
+        document.write("<p>The largest number entered is: ", largest, "</p>");
     </script>
 </body>
 </html>
