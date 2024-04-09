@@ -13,7 +13,10 @@
         var num;
         var largest = Number.MIN_VALUE;
 
-        while((num = Number(prompt("Enter a number"))) != 0){
+        while(true){
+            var input = prompt("Give me a number or leave blank");
+            if(input === "") break;
+            num = Number(input);
             if(num > largest){
                 largest = num;
             }
