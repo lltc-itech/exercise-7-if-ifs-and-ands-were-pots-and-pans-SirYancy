@@ -12,7 +12,21 @@
           it outputs <quote>Buzz</quote>, and if it's divisible by both, it outputs <quote>FizzBuzz</quote>.</p>
 
     <script>
-//YOUR CODE HERE.
+        var count = 1;
+        while(count <= 100){
+            var msg = "";
+            if(count % 3 === 0){
+                msg += "fizz";
+            }
+            if(count % 5 === 0){
+                msg += "buzz";
+            }
+            if(msg === ""){
+                msg = count;
+            }
+            document.write(msg + "<br>");
+            count++;
+        }
     </script>
 </body>
 </html>

@@ -10,7 +10,17 @@
     <p>This program outputs the larger of two entered numbers.</p>
 
     <script>
-//YOUR CODE HERE.
+        var num1 = Number(prompt("Give me a number"));
+        var num2 = Number(prompt("Give me a second number"));
+        var msg;
+
+        if(num1 > num2){
+            msg = num1 + " is larger than " + num2;
+        } else {
+            msg = num2 + " is larger than " + num1;
+        }
+
+        document.write("<p>", msg, "</p>");
     </script>
 </body>
 </html>

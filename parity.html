@@ -10,7 +10,17 @@
     <p>This program will tell you if an entered integer is even or odd.</p>
 
     <script>
-//YOUR CODE HERE.
+        var num = Number(prompt("Give me an integer"));
+        var msg;
+
+        if(num % 2 == 0){
+            msg = "Even";
+        }
+        if(num % 2 != 0){
+            msg = "Odd";
+        }
+
+        document.write("<p>", num, " is ", msg, "</p>");
     </script>
 </body>
 </html>
